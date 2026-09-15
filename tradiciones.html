@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mes patrio - Tradiciones del mes</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            background-color: #fcf8f2; 
+            margin: 20px; 
+            text-align: center; 
+            color: #333333;
+        }
+
+        header { 
+            background-color: #d32f2f; 
+            color: white; 
+            padding: 15px 25px; 
+            border-radius: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;            
+        }
+
+        .texto-header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        .texto-header p {
+            margin: 5px 0 0 0;
+        }
+
+        .imagen-header {
+            width: 90px;        
+            height: 90px;
+            object-fit: cover;  
+            border-radius: 8px; 
+            border: 2px solid white;
+        }
+
+        nav { 
+            background-color: #1b5e20; 
+            padding: 12px; 
+            margin-top: 15px;
+            border-radius: 8px;
+        }
+
+        nav a { 
+            color: #ffffff; 
+            text-decoration: none; 
+            margin-right: 15px; 
+            cursor: pointer; 
+            font-weight: bold;
+        }    
+
+        nav a:hover {
+            color: #ffeb3b; 
+        }
+
+        /* DISEÑO ESTILO CANVA (FONDO VERDE OBSCURO) */
+        main {
+            background-color: #2d5032;
+            padding: 40px 20px;
+            margin-top: 20px;
+            border-radius: 12px;
+            color: white;
+        }
+
+        main h2 {
+            color: #ffffff;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        /* Contenedor de las 3 tarjetas */
+        .tarjetas-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            max-width: 950px;
+            margin: 0 auto;
+        }
+
+        /* Tarjetas con borde delgado */
+        .tarjeta-tradicion {
+            width: 28%;
+            min-width: 240px;
+            border: 2px solid rgba(255, 255, 255, 0.7);
+            border-radius: 15px;
+            padding: 30px 15px 25px 15px;
+            position: relative;
+            box-sizing: border-box;
+            margin-top: 15px;
+            background-color: rgba(0, 0, 0, 0.05);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 180px;
+        }
+
+        /* Cápsulas/Etiquetas blancas sobre la tarjeta */
+        .etiqueta-tradicion {
+            position: absolute;
+            top: -16px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #ffffff;
+            color: #333333;
+            padding: 6px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            white-space: nowrap;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .tarjeta-tradicion p {
+            margin: 0;
+            font-size: 0.9rem;
+            line-height: 1.4;
+            color: #e0e0e0;
+            text-align: center;
+        }
+
+        footer { 
+            background-color: #8d6e63; 
+            color: white; 
+            padding: 15px; 
+            text-align: center; 
+            margin-top: 30px; 
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="mes1.png" 
+             onerror="this.onerror=null; this.src='mes1.jpg'; this.onerror=function(){this.src='mes1.PNG';};" 
+             alt="Imagen Mes Patrio 1" class="imagen-header">
+        
+        <div class="texto-header">
+            <h1>MES PATRIO</h1>
+            <p><strong>México</strong></p>
+        </div>
+
+        <img src="mes2.png" 
+             onerror="this.onerror=null; this.src='mes2.jpg'; this.onerror=function(){this.src='mes2.PNG';};" 
+             alt="Imagen Mes Patrio 2" class="imagen-header">
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="fechas.importantes.html">Fechas importantes</a>
+        <a href="personajes1.html">Personajes ilustres 1</a>
+        <a href="personajes2.html">Personajes ilustres 2</a>
+        <a href="datos.html">Datos curiosos</a>
+        <a href="mitos.html">Mitos</a>
+        <a href="tradiciones.html">Tradiciones del mes</a>
+        <a href="importancia.html">Importancia</a>
+        <a href="conclusion.html">Conclusión</a>
+    </nav>
+
+    <main>
+        <h2>TRADICIONES</h2>
+
+        <div class="tarjetas-container">
+            <!-- TARJETA 1 -->
+            <div class="tarjeta-tradicion">
+                <span class="etiqueta-tradicion">El grito</span>
+                <p>Ceremonias cívicas la noche del 15 de septiembre.</p>
+            </div>
+
+            <!-- TARJETA 2 -->
+            <div class="tarjeta-tradicion">
+                <span class="etiqueta-tradicion">Simbolos patrios</span>
+                <p>Bandera, escudo e himno nacional.</p>
+            </div>
+
+            <!-- TARJETA 3 -->
+            <div class="tarjeta-tradicion">
+                <span class="etiqueta-tradicion">Decoracion</span>
+                <p>Calles, escuelas y casa con verde, blanco y rojo.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p><strong>Nombre completo:</strong> BARRAZA PEREZ ASHLEY BERENICE</p>
+        <p><strong>No. de control:</strong> 24308051280499</p>
+        <p><strong>Semestre y Grupo:</strong> 5-I</p>
+        <p><strong>Especialidad:</strong> Programación</p>
+    </footer>
+
+</body>
+</html>
