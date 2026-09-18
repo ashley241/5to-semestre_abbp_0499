@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Mes patrio - Personajes Ilustres 1</title>
+    <!-- Estilos CSS para el diseño de la página -->
     <style>
+        /* Estilos generales para el cuerpo del documento */
         body { 
             font-family: Arial, sans-serif; 
             background-color: #fcf8f2; 
@@ -12,6 +14,7 @@
             color: #333333;
         }
 
+        /* Estilos del encabezado principal */
         header { 
             background-color: #d32f2f; 
             color: white; 
@@ -22,6 +25,7 @@
             align-items: center;            
         }
 
+        /* Estilos para el texto dentro del header */
         .texto-header h1 {
             margin: 0;
             font-size: 2rem;
@@ -31,6 +35,7 @@
             margin: 5px 0 0 0;
         }
 
+        /* Estilos para las imágenes del header */
         .imagen-header {
             width: 90px;        
             height: 90px;
@@ -39,6 +44,7 @@
             border: 2px solid white;
         }
 
+        /* Estilos del menú de navegación */
         nav { 
             background-color: #1b5e20; 
             padding: 12px; 
@@ -46,6 +52,7 @@
             border-radius: 8px;
         }
 
+        /* Estilos de los enlaces de navegación */
         nav a { 
             color: #ffffff; 
             text-decoration: none; 
@@ -58,7 +65,7 @@
             color: #ffeb3b; 
         }
 
-        
+        /* Estilos del contenido principal */
         main {
             background-color: #2d5032;
             padding: 40px 20px;
@@ -75,6 +82,7 @@
             text-transform: uppercase;
         }
 
+        /* Contenedor flexible para las tarjetas */
         .tarjetas-container {
             display: flex;
             justify-content: center;
@@ -84,7 +92,7 @@
             margin: 0 auto;
         }
 
-        /* Cada tarjeta individual */
+        /* Estilos individuales para cada tarjeta de personaje */
         .tarjeta-personaje {
             width: 28%;
             min-width: 240px;
@@ -93,6 +101,7 @@
             align-items: center;
         }
 
+        /* Estilos de las imágenes de las tarjetas */
         .tarjeta-personaje img {
             width: 100%;
             height: 260px;
@@ -104,6 +113,7 @@
             background-color: #ffffff;
         }
 
+        /* Estilos del texto descriptivo en las tarjetas */
         .tarjeta-personaje p {
             font-size: 0.85rem;
             line-height: 1.4;
@@ -112,6 +122,7 @@
             color: #e0e0e0;
         }
 
+        /* Estilos del pie de página */
         footer { 
             background-color: #8d6e63; 
             color: white; 
@@ -124,6 +135,7 @@
 </head>
 <body>
 
+    <!-- Encabezado de la página -->
     <header>
         <img src="mes1.png" 
              onerror="this.onerror=null; this.src='mes1.jpg'; this.onerror=function(){this.src='mes1.PNG';};" 
@@ -139,6 +151,7 @@
              alt="Imagen Mes Patrio 2" class="imagen-header">
     </header>
 
+    <!-- Menú de navegación principal -->
     <nav>
         <a href="index.html">Inicio</a>
         <a href="fechas.importantes.html">Fechas importantes</a>
@@ -151,10 +164,13 @@
         <a href="conclusion.html">Conclusión</a>
     </nav>
 
+    <!-- Sección de contenido principal -->
     <main>
         <h2>PERSONAJES ILUSTRES</h2>
 
+        <!-- Contenedor que agrupa las tarjetas de los personajes -->
         <div class="tarjetas-container">
+            <!-- Tarjeta 1: Miguel Hidalgo -->
             <div class="tarjeta-personaje">
                 <img src="hidalgo.jpg" 
                      onerror="this.onerror=null; this.src='hidalgo.png';" 
@@ -162,7 +178,7 @@
                 <p>Fue sacerdote y uno de los principales líderes del movimiento iniciado en 1810. Su llamado en Dolores es recordado como un símbolo del inicio de la lucha por la Independencia. Participó en las primeras etapas de la insurgencia y se convirtió en una de las figuras más importantes de la historia de México.</p>
             </div>
 
-            
+            <!-- Tarjeta 2: José María Morelos -->
             <div class="tarjeta-personaje">
                 <img src="morelos.jpg" 
                      onerror="this.onerror=null; this.src='morelos.png';" 
@@ -170,7 +186,7 @@
                 <p>Fue sacerdote y líder insurgente. Organizó campañas militares y dio continuidad al movimiento independentista. En 1813 presentó los Sentimientos de la Nación, documento que expresó ideas políticas sobre el futuro de la nación.</p>
             </div>
 
-            
+            <!-- Tarjeta 3: Josefa Ortiz de Domínguez -->
             <div class="tarjeta-personaje">
                 <img src="josefa.jpg" 
                      onerror="this.onerror=null; this.src='josefa.png';" 
@@ -180,6 +196,7 @@
         </div>
     </main>
 
+    <!-- Pie de página con información del estudiante -->
     <footer>
         <p><strong>Nombre completo:</strong> BARRAZA PEREZ ASHLEY BERENICE</p>
         <p><strong>No. de control:</strong> 24308051280499</p>
